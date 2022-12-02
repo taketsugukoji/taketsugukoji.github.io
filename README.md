@@ -1,0 +1,1 @@
+# taketsugukoji.github.io
