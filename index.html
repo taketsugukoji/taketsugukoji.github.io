@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Port1</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="port1.css">
+
+</head>
+
+<header>
+  <h1 id="top" class="fadein one"><span>H</span><span>a</span><span>t</span><span>c</span><span>h</span></h1>
+
+  <nav id="menu" class="fadein two">
+    <ul class="menu">
+      <li class="menu"><a href="#NEWS">NEWS</a></li>
+      <li class="menu"><a href="#LIVE">LIVE</a></li>
+      <li class="menu"><a href="#DISC">DISCOGRAPHY</a></li>
+      <li class="menu"><a href="#BIO">BIOGRAPHY</a></li>
+    </ul>
+  </nav>
+  
+
+</header>
+<body>
+  <section id="NEWS">
+  <h2>NEWS</h2>
+  XXXXXXXXXXXXXXXXXXXXXX
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div>
+  <ul class="TopView">
+  <li class="viewmore"><a onclick="gotop()">TOP</a></li>
+  <li class="viewmore"><a href="index_news.html">view more...</a></li>
+  </ul>
+  </div>
+  </section>
+
+  <section id="LIVE">
+    <h2>LIVE</h2>
+    XXXXXXXXXXXXXXXXXXXXXX
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <ul class="TopView">
+    <li class="viewmore"><a onclick="gotop()">TOP</a></li>
+    <li class="viewmore"><a href="index_live.html">view more...</a></li>
+    </ul>
+    </div>
+  </section>
+
+  <section id="DISC">
+    <h2>DISCOGRAPHY</h2>
+    XXXXXXXXXXXXXXXXXXXXXX
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <ul class="TopView">
+    <li class="viewmore"><a onclick="gotop()">TOP</a></li>
+    <li class="viewmore"><a href="index_discography.html">view more...</a></li>
+    </ul>
+    </div>
+  </section>
+
+  <section id="BIO">
+    <h2>BIOGRAPHY</h2>
+    XXXXXXXXXXXXXXXXXXXXXX
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <ul class="TopView">
+    <li class="viewmore"><a onclick="gotop()">TOP</a></li>
+    </ul>
+    </div>
+  </section>
+  <script>
+  const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
+  for (let i = 0; i < smoothScrollTrigger.length; i++){
+    smoothScrollTrigger[i].addEventListener('click', (e) => {
+      e.preventDefault();
+      let href = smoothScrollTrigger[i].getAttribute('href');
+       let targetElement = document.getElementById(href.replace('#', ''));
+      const rect = targetElement.getBoundingClientRect().top;
+      const offset = window.pageYOffset;
+      const gap = 60;
+      const target = rect + offset - gap;
+      window.scrollTo({
+        top: target,
+        behavior: 'smooth',
+      });
+    });
+  }
+
+  function gotop(){
+  scrollTo(0,0);
+  }
+</script>
+  
+</body>
+<footer>
+  <small>© All rights reserved by Hatch.</small>
+</footer>
+</html>
