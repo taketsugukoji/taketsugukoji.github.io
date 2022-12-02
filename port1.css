@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+header{ margin-bottom: 250px; }
+
+h1{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 70px;
+    letter-spacing: 8px;  
+    margin-bottom: 80px;
+}
+
+ul.menu{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    font-size: 18px;
+
+   line-height: 30px;
+}
+
+li.menu{ transition: 0.5s; }
+
+li.menu:hover{
+    transform: rotate(-15deg);
+    transition: 0.5s;
+    transform-origin:center center
+}
+
+.fadein {
+    opacity: 0;
+    animation: fadein 1s ease forwards;
+}
+@keyframes fadein {
+    100% {  opacity: 1;}
+}
+ 
+/*以下遅延の指定*/
+.one {animation-delay: 0;}
+.two {animation-delay: 0.5s;}
+
+body{
+    font-family: 'Noto Sans Japanese', sans-serif;
+
+    margin: 280px 50px 50px;
+    background-color: rgb(225, 182, 130);
+}
+
+h2{
+    font-weight: normal;
+    font-size: 45px;
+}
+
+ul.TopView{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+p{ text-align: center; }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{ opacity: 50%; }
+
+.viewmore{
+    font-size: 18px;
+    text-decoration: underline;
+    
+}
+
+li.viewmore:hover{
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+
+
