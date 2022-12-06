@@ -36,7 +36,6 @@ li.menu:hover{
     100% {  opacity: 1;}
 }
  
-/*以下遅延の指定*/
 .one {animation-delay: 0;}
 .two {animation-delay: 0.5s;}
 
